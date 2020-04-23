@@ -1,0 +1,119 @@
+html {
+  background-image: url(https://www.ecopetit.cat/wpic/mpic/51-513280_silver-background-wallpaper-free-photo-silver-background-4k.jpg);
+}
+
+#gallery {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#photoViewer {
+  display: flex;
+  box-shadow: 0px 2px 3px 2px grey;
+  border-radius: 2px;
+  position: relative;
+}
+
+img {
+  height: 400px;
+  width: auto;
+}
+
+button {
+  width: 60px;
+  cursor: pointer;
+  background-color: #efefef;
+  border: none;
+  border-radius: 2px;
+}
+
+#backwards {
+  background-image: url(http://stayathome-syllabus.greenfox.academy/week03/assets/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#backwards:hover {
+  opacity: 70%;
+}
+
+#forward {
+  background-image: url(http://stayathome-syllabus.greenfox.academy/week03/assets/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: scaleX(-1);
+}
+
+#forward:hover {
+  opacity: 70%;
+}
+
+.grey-container {
+  height: 100px;
+  background-color: black;
+  opacity: 80%;
+  position: absolute;
+  bottom: 0px;
+  left: 60px;
+  right: 60px;
+  color: white;
+}
+
+#photo-title {
+  position: absolute;
+  left: 10px;
+  font-style: oblique;
+}
+
+#photo-description {
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+}
+
+#thumbnails {
+  display: flex;
+  justify-content: center;
+}
+
+.thumb {
+  width: 50px;
+  height: 50px;
+  border: ridge 5px white;
+  box-shadow: 0px 5px 5px;
+  margin-top: 15px;
+  cursor: pointer;
+  margin: 10px;
+  position: relative;
+}
+
+#active {
+  border-radius: 5px;
+  border-color: black;
+  box-shadow: 3px 3px 3px 3px;
+}
+
+.thumbContainer {
+  position: relative;
+  height: 50px;
+  
+}
+
+.thumbHover {
+  display: none;
+  font-size: 10px;
+  position: relative;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  top: -105px;
+  text-align: center;
+  
+}
+
+.thumbContainer:hover .thumbHover {
+  display: block;
+}
